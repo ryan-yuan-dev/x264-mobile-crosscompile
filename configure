@@ -1615,7 +1615,7 @@ if [ "$shared" = "yes" ]; then
     else
         echo "SOSUFFIX=so" >>config.mak
         echo "SONAME=libx264.so" >>config.mak
-        echo "SOFLAGS=-shared $SOFLAGS" >>config.mak
+        echo "SOFLAGS=-shared -Wl,-soname,libx264.so $SOFLAGS" >>config.mak
     fi
     echo 'default: lib-shared' >>config.mak
     echo 'install: install-lib-shared' >>config.mak
