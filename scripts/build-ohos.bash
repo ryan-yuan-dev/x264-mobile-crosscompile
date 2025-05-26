@@ -270,7 +270,7 @@ build() {
 
   update_config_h
   make clean
-  make -j8 -d >ohos-make.log
+  make -j8
   make install
 }
 

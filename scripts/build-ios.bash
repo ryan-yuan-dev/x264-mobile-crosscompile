@@ -218,8 +218,8 @@ build() {
     --disable-asm \
     --enable-pic
   make clean
-  # make -j8
-  # make install
+  make -j8
+  make install
 }
 
 main() {

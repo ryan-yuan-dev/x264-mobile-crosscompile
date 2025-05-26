@@ -297,9 +297,9 @@ build() {
   sed -i '' 's/\s*-lpthread\s*/ /g' config.mak
   sed -i '' 's/\s*-lpthread\s*/ /g' x264.pc
 
-  # make clean
-  # make -j8
-  # make install
+  make clean
+  make -j8
+  make install
 }
 
 main() {
